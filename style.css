@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*pour scroller*/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2C3E50;
+    overflow-x: hidden;
+    
+    /* tout ce qui sort sur l axe des x c est coupe*/
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    /*pour mettre au centre de la page en fonction de la taille de l ecran*/
+}
+
+img {
+    display: block;
+}
+
+/*header*/
+
+.headerContainer {
+    height: 66px;
+    width: 100%;
+    background: #272340;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerMenu a {
+    
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #F2E205;
+    border-bottom: 2px solid #F2E205;
+    padding-bottom: 3px;
+}
+
+.headerMenu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*accueil*/
+
+#accueilContainer {
+    background: #272340;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    height: 600px;
+}
+
+.accueil img {
+   
+    box-shadow: 30px -16px #F2E205;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.accueil img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    box-shadow: none;
+}
+
+h1 {
+    
+    font-size: 96px;
+    width: 50%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-shadow: 2px 2px 4px #000000, 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.accueil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*biographie*/
+#Biographie{
+    position: relative;
+    background: #F2E205;
+}
+
+
+#Biographie .biographie {
+    background:#F2E205;
+}
+
+.biographie img {
+   
+    
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 30px -16px #272340, -144px 162px 0px -79px #272340;
+    position: relative;
+    transition: .5s;
+    padding: 0 0 0 10px;
+    max-width: 100%;
+    z-index: 2;
+    max-width: 85%;
+}
+
+.polygonbleu, .polygonJaune, .polygonblanc{
+    transform: translateY(-2px);/*permet de remonter l'image*/
+}
+
+
+.polygonbleu {
+    top: 0;
+    right: 0;
+    position:absolute;
+}
+
+.biographie img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    box-shadow: none;
+    cursor: pointer;
+}
+.biographie{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.biographie .articleElizebeth{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.articleElizebeth article {
+    
+    font-size: 18px;
+    display: flex;
+    text-align: justify;
+    padding:90px;
+    line-height: 38px;
+
+}
+
+
+span {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.titreBio {
+    color: #272340;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+/*enigma*/
+
+#Enigma .enigma1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.enigmatitre {
+    color: #272340;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.enigma1 img {
+   
+    box-shadow: -16px 30px #272340, 120px -145px 0px -79px #F2E205;
+    transition: .5s;
+    max-width: 90%;
+}
+
+.enigma1 img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.enigma1 article {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+}
+
+.articleAbout article {
+    font-size: 18px;
+    text-align: justify;
+    padding:90px 30px 0 30px;
+    line-height: 38px;
+}
+
+.enigma2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px;
+   
+}
+
+.enigma2 img {
+    
+    box-shadow: 30px 30px #272340;
+    transition: .5s;
+    
+    
+}
+.enigma2 img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.enigma2 article { 
+  
+    width: 800px;
+    height: 400px;
+    
+    display: flex;
+    text-align: center;
+    background: #F2E205;
+}
+
+.articleDetails article {
+    font-size: 18px;
+    text-align: justify;
+    padding: 90px 30px 0 30px;
+    line-height: 38px;
+}
+/*annexes*/
+#annexes {
+    background: #272340;
+    color: white;
+}
+
+#annexes .headerAnnexes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 130px;
+}
+
+.titre {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.texteannexes {
+   
+    height: 600px;
+    padding: 0 0 0 40px;
+}
+
+.texteannexes .texte {
+    
+    width: 800px;
+    height: 400px;
+    color:white;
+}
+.texteannexes .texte a{
+    color: white;
+}
+.texteannexes .texte h2{
+    text-decoration: underline overline #F2E205;
+}
+
+.imagefin {
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.reseaux div {
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*media*/
+
+@media screen and (max-width:1000px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #2C3E50;
+        overflow-x: hidden;
+        
+        /* tout ce qui sort sur l axe des x c est coupe*/
+    }
+    .headerContainer {
+        
+        background: #272340;
+        height: 45vh;
+    }
+    header .headerMenu a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0 0;
+        width: 100%;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 0;
+        transition: .3s ease-in-out;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    nav a:hover {
+        color: #F2E205;
+        border-bottom: 2px solid #F2E205;
+        padding-bottom: 2px;
+        
+    }
+    .headerMenu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        padding: 0;
+    }
+    /*accueil*/
+    #accueilContainer { 
+        
+        background: #272340;
+        color: white;
+        width: 100%;
+        height: 100vh;
+    }
+    .accueil img {
+        box-shadow: 30px -16px #F2E205;
+        transition: .5s;
+        cursor: pointer;
+        object-fit: cover;
+    }
+    .accueil img:hover {
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        box-shadow: none;
+    }
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 75px;
+        padding: 10px 0 25px 0;
+        /* identical to box height */
+        text-transform: uppercase;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+        
+    }
+    .titrePrincipal{
+        margin-top:40px;
+    }
+    .accueil {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+    /*biographie*/
+
+    
+    
+    
+    #Biographie .biographie {
+        
+        background: #F2E205;
+        
+         display: flex;
+         flex-direction: column;
+        justify-content: space-around;
+         padding: 70px;
+       }
+    
+    
+    .biographie img {
+   
+    
+        
+        box-shadow: 30px -16px #272340;
+        position: relative;
+        transition: .5s;
+        
+        object-fit: cover;
+       
+    }
+       
+       
+    
+    
+   
+    
+    .polygonbleu {
+        display: none;
+        
+    }
+    
+    .biographie img:hover {
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .biographie{
+        
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    
+    .biographie .articleElizebeth {
+        
+        width: 100%;
+        
+        display: flex;
+        text-align: center;
+        
+    }
+    
+    .articleElizebeth article {
+        font-size: 18px;
+        text-align: justify;
+        padding: 65px 0 0 0;
+        line-height: 28px;
+    }
+    
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+   
+
+    
+    
+    .titreBio {
+        
+        color: #272340;
+        text-shadow: 2px 2px 4px #000000;
+        }
+        
+    /*enigma*/
+
+    #Enigma .enigma1 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 70px;
+    }
+
+    .enigmatitre {
+    color: #272340;
+    text-shadow: 2px 2px 4px #000000;
+     }
+    .polygonJaune{
+    display: none;
+   }
+
+    .enigma1 img {
+    box-shadow: none;
+    transition: .5s;
+    box-shadow: -16px 30px #272340;
+   
+    object-fit: cover;
+    
+    
+    }
+
+   .enigma1 img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    box-shadow: none;
+    cursor: pointer;
+    
+    
+}
+
+.enigma1 article {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.articleAbout article {
+    font-size: 18px;
+    text-align: justify;
+    padding: 90px 0 0 0;
+    
+}
+#Enigma .enigma2 {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 70px;
+}
+.enigma2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px;
+    }
+
+.enigma2 img {
+    box-shadow: 30px -16px #272340;
+    max-width: 100%;
+    margin-top:55px;
+   }
+
+.enigma2 article {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    background:white;
+   
+}
+
+.articleDetails article {
+    font-size: 18px;
+    text-align: justify;
+    padding: 90px 0 0 0;
+}
+
+#annexes {
+    background: #272340;
+    color: white;
+    margin-top:250px;
+}
+
+#annexes .headerAnnexes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+.polygonblanc{
+    display: none;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.texteannexes .texte {
+    
+    width: 100%;
+    
+}
+
+.imagefin {
+    display:none;
+}
+.polyJaune{
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: space-around;
+    padding: 0px;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.reseaux div {
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+    
+}
